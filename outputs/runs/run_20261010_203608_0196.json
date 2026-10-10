@@ -1,0 +1,31 @@
+{
+  "run_id": "run_20261010_203608_0196",
+  "timestamp": "2026-10-10 20:36:08",
+  "success": true,
+  "collision": false,
+  "total_steps": 15,
+  "trajectory_length": 16.6569,
+  "optimal_path_length": 16.6569,
+  "path_efficiency": 1.0,
+  "replan_count": 0,
+  "execution_time_seconds": 137.5783,
+  "config_summary": {
+    "grid_size": [
+      20,
+      20
+    ],
+    "start": [
+      2,
+      10
+    ],
+    "goal": [
+      17,
+      10
+    ],
+    "static_obstacles_count": 18,
+    "dynamic_obstacles_count": 1,
+    "allow_diagonal": true,
+    "heuristic": "euclidean"
+  },
+  "message": "Goal reached successfully at (17, 10) in 15 steps!"
+}

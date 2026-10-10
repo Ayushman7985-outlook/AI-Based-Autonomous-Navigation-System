@@ -1,0 +1,51 @@
+{
+  "environment": {
+    "width": 20,
+    "height": 20,
+    "start": [1, 1],
+    "goal": [18, 18],
+    "static_obstacles": [
+      [5, 0], [5, 1], [5, 2], [5, 3], [5, 4], [5, 5], [5, 6], [5, 7],
+      [10, 8], [10, 9], [10, 10], [10, 11], [10, 12], [10, 13], [10, 14],
+      [14, 5], [14, 6], [14, 7], [14, 8], [14, 9], [14, 10], [14, 15], [14, 16], [14, 17], [14, 18], [14, 19]
+    ]
+  },
+  "simulation": {
+    "max_steps": 100,
+    "dynamic_obstacles": [
+      {
+        "id": "dyn_1",
+        "initial_position": [1, 4],
+        "trajectory": [
+          [1, 4], [2, 4], [3, 4], [4, 4], [5, 4], [6, 4], [6, 3],
+          [6, 2], [5, 2], [4, 2], [3, 2], [2, 2], [1, 2], [1, 3]
+        ]
+      },
+      {
+        "id": "dyn_2",
+        "initial_position": [16, 14],
+        "trajectory": [
+          [16, 14], [15, 14], [14, 14], [13, 14], [12, 14], [11, 14], [11, 13],
+          [11, 12], [12, 12], [13, 12], [14, 12], [15, 12], [16, 12], [16, 13]
+        ]
+      }
+    ]
+  },
+  "planning": {
+    "allow_diagonal": false,
+    "heuristic": "manhattan"
+  },
+  "control": {
+    "step_size": 1,
+    "replan_on_block": true
+  },
+  "visualization": {
+    "save_figure": true,
+    "figure_path": "outputs/figures/simulation_trajectory.png",
+    "figure_title": "AI Autonomous Navigation Simulation Trajectory"
+  },
+  "evaluation": {
+    "save_metrics": true,
+    "metrics_path": "outputs/metrics/navigation_metrics.json"
+  }
+}
